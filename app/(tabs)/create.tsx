@@ -1,17 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 
-// Define the HomeScreen component
-export default function HomeScreen() {
-  // Example function to show an alert
-  const showAlert = () => {
-    Alert.alert('Welcome to the Home Page!');
-  };
+// Define the Done component
+export default function Done() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Page</Text>
-      <Button title="Show Welcome Alert" onPress={showAlert} />
+      <Text style={styles.title}>Done Page</Text>
     </View>
   );
 };
