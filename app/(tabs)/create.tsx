@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 
 // Define the Done component
-export default function Done() {
+const Done = () => {
 
   return (
     <View style={styles.container}>
@@ -26,3 +26,5 @@ const styles = StyleSheet.create({
   },
 });
 
+
+export default Done

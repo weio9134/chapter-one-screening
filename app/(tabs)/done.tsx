@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 
 // Define the Create component
-export default function Create() {
+const Create = () => {
 
   return (
     <View style={styles.container}>
@@ -26,3 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
+export default Create
