@@ -107,6 +107,7 @@ const styles = StyleSheet.create({
     height: 50,
     fontSize: 18,
     fontWeight: 'bold',
+    // paddingTop: 10,
   },
   inputDetails: {
     height: 150,

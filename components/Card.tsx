@@ -19,10 +19,12 @@ const Card = ({ title, details, checked, toggle, deleteTodo }: CardProps) => {
       {/* top bar for quick access of each todo */}
       <View style={styles.topBar}>
         {/* check box to maintain status */}
-        <Checkbox
-          status={checked ? 'checked' : 'unchecked'}
-          onPress={toggle}
-        />
+        <View style={styles.checkbox}>
+          <Checkbox
+            status={checked ? 'checked' : 'unchecked'}
+            onPress={toggle}
+          />
+        </View>
 
         {/* click title to toggle details */}
         <TouchableOpacity onPress={() => setShowMore(!showMore)} style={styles.titleContainer}>
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
 
-  // strike through the card if its done 
+  // dim the card if its done 
   cardChecked: {
     backgroundColor: '#f0f0f0',
     opacity: 0.6, 
@@ -74,6 +76,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10
+  },
+
+  checkbox: {
+    backgroundColor: '#f0f0f0',
+    borderRadius: 20,
   },
 
   // the title should be bolder and bigger and take up all space to the right

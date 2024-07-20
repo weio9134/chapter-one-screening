@@ -10,7 +10,7 @@ const Done = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}> ToDo List </Text>
+        <Text style={styles.title}> Finished ToDos </Text>
         <Text style={styles.text}> You have finished {todoList.reduce((count, todo) => { return todo.checked ? count + 1 : count}, 0)} todos! </Text>
       </View>
 
