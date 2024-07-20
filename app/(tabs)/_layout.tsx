@@ -1,6 +1,5 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -13,7 +12,18 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
+        // add some padding to make text and icon more visible
+        tabBarStyle: {
+          paddingBottom: 10,
+          height: 60,
+          paddingTop: 5 
+        },
+        tabBarLabelStyle: {
+          fontSize: 14,
+        }
       }}>
+
+      {/* create nav tabs for each section: home, create, done */}
       <Tabs.Screen
         name="index"
         options={{
