@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Checkbox } from 'react-native-paper';
+import { Ionicons } from '@expo/vector-icons';
 
 type CardProps = {
   title: string;
   details: string;
   checked: boolean;
   toggle: () => void;
-}
+  deleteTodo: () => void;
+};
 
-const Card = ({ title, details, checked, toggle }: CardProps) => {
+const Card = ({ title, details, checked, toggle, deleteTodo }: CardProps) => {
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -25,6 +27,11 @@ const Card = ({ title, details, checked, toggle }: CardProps) => {
         {/* click title to toggle details */}
         <TouchableOpacity onPress={() => setShowMore(!showMore)} style={styles.titleContainer}>
           <Text style={styles.title}>{title}</Text>
+        </TouchableOpacity>
+
+        {/* click to delete todo */}
+        <TouchableOpacity onPress={deleteTodo} style={styles.deleteButton}>
+          <Ionicons name="trash-outline" size={24} color="red" />
         </TouchableOpacity>
       </View>
 
@@ -76,6 +83,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold',
+  },
+
+  deleteButton: {
+    padding: 5,
   },
 
 
