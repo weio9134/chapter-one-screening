@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Checkbox } from 'react-native-paper';
-import { Ionicons } from '@expo/vector-icons';
+import { TabBarIcon } from './navigation/TabBarIcon';
 
 type CardProps = {
   title: string;
@@ -33,7 +33,7 @@ const Card = ({ title, details, checked, toggle, deleteTodo }: CardProps) => {
 
         {/* click to delete todo */}
         <TouchableOpacity onPress={deleteTodo} style={styles.deleteButton}>
-          <Ionicons name="trash-outline" size={24} color="red" />
+          <TabBarIcon name={'trash-outline'} color={'red'} />
         </TouchableOpacity>
       </View>
 
