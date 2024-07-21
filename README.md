@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Wei Ouyang - Chapter One Technical Screening
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -16,35 +16,24 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+I recommend using Android Studio or Xcode to test out Android and IOS devices respectively.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This app features three main tabs:
 
-## Get a fresh project
+### Home tab
 
-When you're ready, run:
+In this tab, you'll be able to see all of your tasks. You can mark any task as complete or delete them.
 
-```bash
-npm run reset-project
-```
+### Create tab
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+In this tab, you'll be able to create a new task. Simply give it a quick title, and fill in its details if necessary. Then, click the create button to finalize your task.
 
-## Learn more
+### Finished tab
 
-To learn more about developing your project with Expo, look at the following resources:
+In this tab, you'll be able to see all of your finished tasks. You can unmark them as complete, or delete them all together.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## External Libraries
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For this app, the only external library I've used outside of Expo itself was React Native Paper. This provided me with a Checkbox UI that I could use to implement each task with, since this doesn't come with React Native.
