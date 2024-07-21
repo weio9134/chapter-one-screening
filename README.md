@@ -16,7 +16,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-I recommend using Android Studio or Xcode to test out Android and IOS devices respectively. Read more about setting up your environment [here](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated)
+I recommend using Android Studio or Xcode to test out Android and IOS devices respectively. Read more about setting up your environment [here](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated).
 
 ## Features
 
