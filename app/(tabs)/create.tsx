@@ -65,7 +65,7 @@ const Create = () => {
 
       {/* click to make the todo */}
       <TouchableOpacity onPress={submit} style={styles.submit}>
-        <Text style={{ color: 'white' }}> Make the ToDo </Text>    
+        <Text style={{ color: 'white' }}> Create </Text>    
       </TouchableOpacity>
     </View>
   );
